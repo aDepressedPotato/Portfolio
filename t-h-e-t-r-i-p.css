@@ -5,15 +5,7 @@
   width: 2080.4px;
   height: 2573px;
 }
-.icon-core-x1 {
-  position: absolute;
-  top: 66px;
-  right: 128.9px;
-  width: 127.1px;
-  height: 127.1px;
-  cursor: pointer;
-}
-.screenshot-2024-11-05-130308 {
+.screenshot-2024-11-05-1303081 {
   position: absolute;
   top: 94px;
   left: 66px;
@@ -22,7 +14,7 @@
   height: 521px;
   object-fit: cover;
 }
-.the-trip1 {
+.the-trip2 {
   position: absolute;
   top: 390.82px;
   right: 128.89px;
@@ -93,14 +85,22 @@
   width: 991px;
   height: 968px;
 }
-.path-18-icon {
+.path-18-icon1 {
   position: absolute;
   top: 817.39px;
   left: 887.07px;
   width: 10px;
   height: 923.5px;
 }
-.the-trip {
+.icon-akar-cross {
+  position: absolute;
+  top: 43px;
+  right: 35.9px;
+  width: 112.1px;
+  height: 112.1px;
+  cursor: pointer;
+}
+.the-trip1 {
   position: relative;
   background-color: var(--color-gainsboro);
   width: 100%;

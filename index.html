@@ -16,183 +16,140 @@
     />
   </head>
   <body>
-    <div class="home">
-      <img class="home-child" alt="" src="./public/group-12.svg" />
+    <div class="tokyo-glow">
+      <img class="tokyo-glow-child" alt="" src="./public/group-14.svg" />
 
-      <img class="home-item" alt="" src="./public/group-2.svg" />
+      <div class="tokyo-glow-item"></div>
+      <div class="tokyo-glow-inner"></div>
+      <div class="rectangle-div"></div>
+      <img class="icon" alt="" src="./public/11@2x.png" />
 
-      <div class="liam-rosloot1">Liam Rosloot</div>
-      <button class="icon-akar-arrow-down-thick">
-        <img
-          class="icon-akar-arrow-down-thick1"
-          alt=""
-          src="./public/icon-akararrowdownthick.svg"
-        />
-      </button>
-      <div class="hi-there-im">
-        <p class="hi-there">Hi there!</p>
-        <p class="hi-there">I'm</p>
+      <div class="public-ghost-ghost-container">
+        <p class="p">[</p>
+        <p class="public-ghost-ghost">public Ghost Ghost;</p>
+        <p class="p">private float timer;</p>
+        <p class="p">private float timeValue;</p>
+        <p class="p">private void Awake()</p>
+        <p class="p">{</p>
+        <p class="p">if (Ghost.IsRecord)</p>
+        <p class="p">{</p>
+        <p class="p">Ghost.ResetData();</p>
+        <p class="p">timeValue = 0;</p>
+        <p class="p">timer = 0;</p>
+        <p class="p">}</p>
+        <p class="p">}</p>
+        <p class="p">}]</p>
+        <p class="public-ghost-ghost">&nbsp;</p>
+        <p class="p">void Update()</p>
+        <p class="p">{</p>
+        <p class="p">timer += Time.unscaledDeltaTime;</p>
+        <p class="p">timeValue += Time.unscaledDeltaTime;</p>
+        <p class="public-ghost-ghost">&nbsp;</p>
+        <p class="p">
+          if(Ghost.IsRecord& timer &gt;= 1 / Ghost.RecordFrequancy)
+        </p>
+        <p class="p">{</p>
+        <p class="p">Ghost.TimeStamp.Add(timeValue);</p>
+        <p class="p">Ghost.Position.Add(this.transform.position);</p>
+        <p class="p">Ghost.Rotation.Add(this.transform.eulerAngles);</p>
+        <p class="public-ghost-ghost">&nbsp;</p>
+        <p class="p">timer = 0;</p>
+        <p class="p">}</p>
+        <p class="p">}]</p>
       </div>
-      <div class="home-inner"></div>
-      <div class="home-child1"></div>
-      <div class="home-child2"></div>
-      <a class="rectangle-a" id="rectangleLink"> </a>
-      <a class="home-child3" id="rectangleLink1"> </a>
-      <img class="liam-icon1" alt="" src="./public/liam@2x.png" />
-
-      <img class="path-13-icon" alt="" src="./public/path-13.svg" />
-
-      <div class="hi-im-liam-a-container">
-        <p class="hi-there">
-          <b>Hi! I'm Liam,</b>
+      <div class="public-ghost-ghost-container1">
+        <p class="public-ghost-ghost">[</p>
+        <p class="p">public Ghost Ghost;</p>
+        <p class="p">private float timeValue;</p>
+        <p class="p">private int index1;</p>
+        <p class="p">private int index2;</p>
+        <p class="public-ghost-ghost">&nbsp;</p>
+        <p class="p">private void Awake()</p>
+        <p class="p">{</p>
+        <p class="p">timeValue = 0;</p>
+        <p class="p">}</p>
+        <p class="p">void Update()</p>
+        <p class="p">{</p>
+        <p class="p">timeValue += Time.unscaledDeltaTime;</p>
+        <p class="public-ghost-ghost">&nbsp;</p>
+        <p class="p">if (Ghost.IsReplay)</p>
+        <p class="p">{</p>
+        <p class="p">GetIndex();</p>
+        <p class="p">SetTransform();</p>
+        <p class="p">}</p>
+        <p class="p">}</p>
+        <p class="p">private void GetIndex()</p>
+        <p class="p">{</p>
+        <p class="p">for(int i=0; i&lt; Ghost.TimeStamp.Count-2; i++)</p>
+        <p class="p">{</p>
+        <p class="p">if(Ghost.TimeStamp[i]== timeValue)</p>
+        <p class="p">{</p>
+        <p class="p">index1 = i;</p>
+        <p class="p">index2 = i;</p>
+        <p class="p">return;</p>
+        <p class="p">}</p>
+        <p class="p">
+          else if(Ghost.TimeStamp[i]&lt; timeValue& timeValue &lt;
+          Ghost.TimeStamp[i + 1])
         </p>
-        <p class="blank-line31">
-          <span>
-            <span>&nbsp;</span>
-          </span>
-        </p>
-        <p class="a-21-year-old-dutch-student">
-          <span>
-            <span>A 21 year old dutch student.</span>
-          </span>
-        </p>
-        <p class="hi-there">
-          <span>
-            <span>&nbsp;</span>
-          </span>
-        </p>
-        <p class="hi-there">
-          <span>
-            <span
-              >I am a student at the Grafisch Lyceum in Utrecht as a game
-              developer.</span
-            >
-          </span>
-        </p>
-        <p class="hi-there">
-          <span>
-            <span>&nbsp;</span>
-          </span>
-        </p>
-        <p class="hi-there">
-          <span>
-            <span>I specialize in gameplay programming in Unity C#</span>
-          </span>
-        </p>
-        <p class="hi-there">
-          <span>
-            <span>&nbsp;</span>
-          </span>
-        </p>
-        <p class="hi-there">
-          <span>
-            <span
-              >Feel free to take a look around my portfolio to get to know me a
-              bit more and to see what I've worked on so far!</span
-            >
-          </span>
-        </p>
+        <p class="p">{</p>
+        <p class="p">index1 = i;</p>
+        <p class="p">index2 = i + 1;</p>
+        <p class="p">return;</p>
+        <p class="public-ghost-ghost"></p>
       </div>
-      <b class="click-here-for" id="clickHereFor">Click here for my CV</b>
-      <div class="tokyo-glow-neon-light-tokyo-container">
-        <p class="hi-there">
-          <b>Tokyo GlowNeon Light</b>
+      <div class="index1-ghosttimestampcount-container">
+        <p class="p">}</p>
+        <p class="p">}</p>
+        <p class="p">index1 = Ghost.TimeStamp.Count - 1;</p>
+        <p class="p">index2 = Ghost.TimeStamp.Count - 1;</p>
+        <p class="p">}</p>
+        <p class="p">private void SetTransform()</p>
+        <p class="p">{</p>
+        <p class="p">if(index1== index2)</p>
+        <p class="p">{</p>
+        <p class="p">this.transform.position = Ghost.Position[index1];</p>
+        <p class="p">this.transform.eulerAngles = Ghost.Position[index1];</p>
+        <p class="p">}</p>
+        <p class="p">else</p>
+        <p class="p">{</p>
+        <p class="p">
+          float interpolationFactor = (timeValue - Ghost.TimeStamp[index1]) /
+          (Ghost.TimeStamp[index2] - Ghost.TimeStamp[index1]);
         </p>
-        <p class="blank-line31">
-          <span>
-            <span>&nbsp;</span>
-          </span>
+        <p class="public-ghost-ghost">&nbsp;</p>
+        <p class="p">
+          this.transform.position = Vector3.Lerp(Ghost.Position[index1],
+          Ghost.Position[index2], interpolationFactor);
         </p>
-        <p class="a-21-year-old-dutch-student">
-          <span>
-            <span
-              >Tokyo Glow is a racing game that we made in a group of 7
-              different people. 3 developers and 4 artist.</span
-            >
-          </span>
+        <p class="p">
+          this.transform.eulerAngles = Vector3.Lerp(Ghost.Rotation[index1],
+          Ghost.Rotation[index2], interpolationFactor);
         </p>
-        <p class="hi-there">
-          <span>
-            <span>&nbsp;</span>
-          </span>
-        </p>
-        <p class="hi-there">
-          <span>
-            <span>I personally made the ghost in the game</span>
-          </span>
-        </p>
+        <p class="p">}</p>
+        <p class="p">}]</p>
       </div>
-      <div class="the-trip-the-trip-container">
-        <p class="hi-there">
-          <b>The Trip</b>
-        </p>
-        <p class="blank-line31">
-          <span>
-            <span>&nbsp;</span>
-          </span>
-        </p>
-        <p class="a-21-year-old-dutch-student">
-          <span>
-            <span
-              >The Trip is a story based game filled with a lot of different
-              minigames to get an interactive feel of the story</span
-            >
-          </span>
-        </p>
-        <span>
-          <span> </span>
-        </span>
+      <div class="tokyo-glow-neon-night-container">
+        <p class="public-ghost-ghost">Tokyo Glow</p>
+        <p class="public-ghost-ghost">Neon Night</p>
       </div>
-      <b class="click-here-for1" id="clickHereFor1">Click here for the code</b>
-      <b class="click-here-for2" id="clickHereFor2">Click here for the code</b>
-      <div class="div"></div>
-      <img class="icon1" alt="" src="./public/1@2x.png" />
+      <div class="recorded-info-about">Recorded info about the car below</div>
+      <div class="script-for-how">Script for how the car drives</div>
+      <img class="path-16-icon" alt="" src="./public/path-16.svg" />
 
-      <img class="path-14-icon" alt="" src="./public/path-14.svg" />
-
-      <div class="home-child4"></div>
       <img
-        class="screenshot-2024-11-05-1303081"
+        class="icon-core-x"
         alt=""
-        src="./public/screenshot-20241105-1303081@2x.png"
+        src="./public/icon-corex.svg"
+        id="iconCoreX"
       />
-
-      <img class="path-17-icon" alt="" src="./public/path-17.svg" />
     </div>
 
     <script>
-      var rectangleLink = document.getElementById("rectangleLink");
-      if (rectangleLink) {
-        rectangleLink.addEventListener("click", function (e) {
-          window.location.href = "./web19201.html";
-        });
-      }
-
-      var rectangleLink1 = document.getElementById("rectangleLink1");
-      if (rectangleLink1) {
-        rectangleLink1.addEventListener("click", function (e) {
-          window.location.href = "./web19201.html";
-        });
-      }
-
-      var clickHereFor = document.getElementById("clickHereFor");
-      if (clickHereFor) {
-        clickHereFor.addEventListener("click", function (e) {
-          window.location.href = "./c-v.html";
-        });
-      }
-
-      var clickHereFor1 = document.getElementById("clickHereFor1");
-      if (clickHereFor1) {
-        clickHereFor1.addEventListener("click", function (e) {
-          window.location.href = "./web19201.html";
-        });
-      }
-
-      var clickHereFor2 = document.getElementById("clickHereFor2");
-      if (clickHereFor2) {
-        clickHereFor2.addEventListener("click", function (e) {
-          window.location.href = "./t-h-e-t-r-i-p.html";
+      var iconCoreX = document.getElementById("iconCoreX");
+      if (iconCoreX) {
+        iconCoreX.addEventListener("click", function (e) {
+          window.location.href = "./h-o-m-e.html";
         });
       }
     </script>
