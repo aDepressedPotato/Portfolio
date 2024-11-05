@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./t-h-e-t-r-i-p.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courier New:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Castellar:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="the-trip">
+      <img class="the-trip-child" alt="" src="./public/group-16.svg" />
+
+      <img
+        class="icon-core-x1"
+        alt=""
+        src="./public/icon-corex.svg"
+        id="iconCoreX"
+      />
+
+      <img
+        class="screenshot-2024-11-05-130308"
+        alt=""
+        src="./public/screenshot-20241105-130308@2x.png"
+      />
+
+      <div class="the-trip1">The Trip</div>
+      <div class="the-trip-item"></div>
+      <div class="the-trip-inner"></div>
+      <div class="script-for-shooting">
+        Script for shooting astroids being spawned in
+      </div>
+      <div class="script-for-shooting1">Script for shooting bullets</div>
+      <div class="serializefield-private-gameob-container">
+        <p class="void-start">&nbsp;</p>
+        <p class="serializefield-private-gameob">
+          [SerializeField] private GameObject asteroids1;
+        </p>
+        <p class="serializefield-private-gameob">
+          [SerializeField] private GameObject asteroids2;
+        </p>
+        <p class="serializefield-private-gameob">
+          [SerializeField] private GameObject asteroids3;
+        </p>
+        <p class="void-start">&nbsp;</p>
+        <p class="void-start">void Start()</p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          StartCoroutine(Asteroids1());
+        </p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="void-start">&nbsp;</p>
+        <p class="void-start">void Update()</p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          spawnTime += Time.deltaTime;
+        </p>
+        <p class="void-start">&nbsp;</p>
+        <p class="serializefield-private-gameob">
+          if (spawnTime &gt;= 15 && !enemy2)
+        </p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          StartCoroutine(Asteroids2());
+        </p>
+        <p class="serializefield-private-gameob">enemy2 = true;</p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="void-start">&nbsp;</p>
+        <p class="serializefield-private-gameob">
+          if (spawnTime &gt;= 15 && !enemy3)
+        </p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          StartCoroutine(Asteroids3());
+        </p>
+        <p class="serializefield-private-gameob">enemy3 = true;</p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="void-start">}</p>
+        <p class="void-start">IEnumerator Asteroids1()</p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          for (int i = 0; i &lt; 10; i++)
+        </p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          x_Pos = Random.Range(-1.7096f, -5.95f);
+        </p>
+        <p class="serializefield-private-gameob">
+          y_Pos = Random.Range(10, 12);
+        </p>
+      </div>
+      <div class="serializefield-private-transf-container">
+        <p class="void-start">
+          [SerializeField] private Transform BulletSpawnpoint;
+        </p>
+        <p class="serializefield-private-gameob">
+          [SerializeField] private GameObject BulletSpawnpointPrefab;
+        </p>
+        <p class="serializefield-private-gameob">
+          [SerializeField] private float bulletSpeed = 15;
+        </p>
+        <p class="void-start">&nbsp;</p>
+        <p class="serializefield-private-gameob">private void Update()</p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          if (Input.GetKeyUp(KeyCode.Space))
+        </p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          var bullet = Instantiate(BulletSpawnpointPrefab,
+          BulletSpawnpoint.position, BulletSpawnpoint.rotation);
+        </p>
+        <p class="serializefield-private-gameob">
+          bullet.GetComponent&lt;Rigidbody2D&gt;().velocity =
+          BulletSpawnpoint.up * bulletSpeed;
+        </p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="serializefield-private-gameob">}</p>
+      </div>
+      <div class="instantiateasteroids1-new-ve-container">
+        <p class="serializefield-private-gameob"></p>
+        <p class="serializefield-private-gameob">
+          Instantiate(asteroids1, new Vector3(x_Pos, y_Pos),
+          Quaternion.identity);
+        </p>
+        <p class="serializefield-private-gameob"></p>
+        <p class="serializefield-private-gameob">
+          yield return new WaitForSeconds(2f);
+        </p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="serializefield-private-gameob">IEnumerator Asteroids2()</p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          for(int i = 0; i &lt; 10; i++)
+        </p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          x_Pos = Random.Range(-1.7096f, -5.95f);
+        </p>
+        <p class="serializefield-private-gameob">
+          y_Pos = Random.Range(10, 12);
+        </p>
+        <p class="void-start">&nbsp;</p>
+        <p class="serializefield-private-gameob">
+          Instantiate(asteroids2, new Vector3(x_Pos, y_Pos),
+          Quaternion.identity);
+        </p>
+        <p class="void-start">&nbsp;</p>
+        <p class="serializefield-private-gameob">
+          yield return new WaitForSeconds(2f);
+        </p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="serializefield-private-gameob">IEnumerator Asteroids3()</p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          for (int i = 0; i &lt; 10; i++)
+        </p>
+        <p class="serializefield-private-gameob">{</p>
+        <p class="serializefield-private-gameob">
+          x_Pos = Random.Range(-1.7096f, -5.95f);
+        </p>
+        <p class="serializefield-private-gameob">
+          y_Pos = Random.Range(10, 12);
+        </p>
+        <p class="void-start">&nbsp;</p>
+        <p class="serializefield-private-gameob">
+          Instantiate(asteroids3, new Vector3(x_Pos, y_Pos),
+          Quaternion.identity);
+        </p>
+        <p class="void-start">&nbsp;</p>
+        <p class="serializefield-private-gameob">
+          yield return new WaitForSeconds(2f);
+        </p>
+        <p class="serializefield-private-gameob">}</p>
+        <p class="serializefield-private-gameob">}</p>
+      </div>
+      <img class="path-18-icon" alt="" src="./public/path-18.svg" />
+    </div>
+
+    <script>
+      var iconCoreX = document.getElementById("iconCoreX");
+      if (iconCoreX) {
+        iconCoreX.addEventListener("click", function (e) {
+          window.location.href = "./h-o-m-e.html";
+        });
+      }
+    </script>
+  </body>
+</html>

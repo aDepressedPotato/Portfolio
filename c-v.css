@@ -1,0 +1,179 @@
+.cv-child {
+  position: absolute;
+  top: 36.79px;
+  left: 0;
+  width: 1920px;
+  height: 2223.2px;
+}
+.icon-core-x2 {
+  position: absolute;
+  top: 66px;
+  right: 128.9px;
+  width: 127.1px;
+  height: 127.1px;
+  cursor: pointer;
+}
+.liam-icon,
+.path-18-icon1 {
+  position: absolute;
+  top: 817.39px;
+  left: 954.57px;
+  width: 10px;
+  height: 923.5px;
+}
+.liam-icon {
+  top: 66px;
+  left: 130px;
+  width: 529px;
+  height: 795px;
+  object-fit: cover;
+}
+.liam-rosloot {
+  position: absolute;
+  top: 358px;
+  right: 116px;
+  font-size: var(--font-size-111xl);
+  font-family: var(--font-castellar);
+  color: var(--color-gainsboro);
+  display: inline-block;
+  width: 1134px;
+}
+.cv-item {
+  top: 572px;
+  right: 133px;
+  width: 507px;
+  height: 204px;
+}
+.cv-child1,
+.cv-child2,
+.cv-child3,
+.cv-inner,
+.cv-item {
+  position: absolute;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-lightgray);
+}
+.cv-inner {
+  top: 572px;
+  left: 729px;
+  width: 507px;
+  height: 204px;
+}
+.cv-child1,
+.cv-child2,
+.cv-child3 {
+  width: 650px;
+}
+.cv-child1 {
+  bottom: 129px;
+  left: 263.5px;
+  height: 1213px;
+}
+.cv-child2,
+.cv-child3 {
+  right: 263.5px;
+}
+.cv-child2 {
+  top: 918px;
+  height: 645px;
+}
+.cv-child3 {
+  bottom: 284px;
+  height: 354px;
+}
+.studentglunl {
+  margin: 0;
+}
+.im-a-spontanious,
+.studentglunl-heerhugowaard {
+  position: absolute;
+  display: inline-block;
+  width: 372px;
+}
+.studentglunl-heerhugowaard {
+  top: 606px;
+  right: 160.91px;
+}
+.im-a-spontanious {
+  top: 615px;
+  left: 786.09px;
+}
+.internship-de-roset-patisserie-container {
+  position: absolute;
+  bottom: 129px;
+  left: 334px;
+  display: inline-block;
+  width: 580px;
+}
+.game-development-glu-grafisch-container {
+  position: absolute;
+  top: 1032px;
+  right: 272px;
+  display: inline-block;
+  width: 580px;
+}
+.drawing-hanging-with-friends-container {
+  position: absolute;
+  bottom: 298px;
+  left: 1080.5px;
+  display: inline-block;
+  width: 380px;
+}
+.icon-akar-location {
+  position: absolute;
+  top: 711px;
+  left: 1319.5px;
+  width: 27px;
+  height: 33px;
+}
+.icon-core-birthday-cake {
+  position: absolute;
+  top: 597.73px;
+  left: 1316.25px;
+  width: 31.5px;
+  height: 34.5px;
+}
+.icon-feather-mail {
+  position: absolute;
+  top: 662px;
+  left: 1316.75px;
+  width: 34.2px;
+  height: 27px;
+}
+.education,
+.experience,
+.hobbies {
+  position: absolute;
+  top: 952px;
+  left: 312.5px;
+  font-size: var(--font-size-31xl);
+  font-family: var(--font-castellar);
+  text-align: center;
+  display: inline-block;
+  width: 554px;
+}
+.education,
+.hobbies {
+  left: 1055.5px;
+}
+.hobbies {
+  top: 1647px;
+  left: 1035.5px;
+}
+.path-23-icon {
+  position: absolute;
+  top: 846px;
+  left: 69.33px;
+  width: 650.3px;
+  height: 30px;
+}
+.cv {
+  position: relative;
+  background-color: var(--color-gainsboro);
+  width: 100%;
+  height: 2260px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-courier-new);
+}

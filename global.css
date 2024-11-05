@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-castellar: Castellar;
+  --font-courier-new: "Courier New";
+
+  /* font sizes */
+  --font-size-31xl: 50px;
+  --font-size-81xl: 100px;
+  --font-size-5xl: 24px;
+  --font-size-111xl: 130px;
+  --font-size-21xl: 40px;
+  --font-size-4xl: 23px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-gainsboro: #cfdae0;
+  --color-darkslategray: #1f2f22;
+  --color-gray: #091008;
+  --color-darkseagreen: #93a889;
+  --color-lightgray: #d2d5d3;
+  --color-white: #fff;
+
+  /* Border radiuses */
+  --br-31xl: 50px;
+  --br-42xl: 61px;
+  --br-66xl: 85px;
+}
