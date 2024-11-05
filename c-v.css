@@ -5,16 +5,8 @@
   width: 1920px;
   height: 2223.2px;
 }
-.icon-core-x1 {
-  position: absolute;
-  top: 66px;
-  right: 128.9px;
-  width: 127.1px;
-  height: 127.1px;
-  cursor: pointer;
-}
 .liam-icon,
-.path-18-icon {
+.path-18-icon1 {
   position: absolute;
   top: 817.39px;
   left: 954.57px;
@@ -28,7 +20,7 @@
   height: 795px;
   object-fit: cover;
 }
-.liam-rosloot {
+.liam-rosloot1 {
   position: absolute;
   top: 358px;
   right: 116px;
@@ -46,9 +38,9 @@
 }
 .cv-child1,
 .cv-child2,
-.cv-child3,
 .cv-inner,
-.cv-item {
+.cv-item,
+.rectangle-div {
   position: absolute;
   border-radius: var(--br-31xl);
   background-color: var(--color-lightgray);
@@ -61,23 +53,23 @@
 }
 .cv-child1,
 .cv-child2,
-.cv-child3 {
+.rectangle-div {
   width: 650px;
 }
-.cv-child1 {
+.rectangle-div {
   bottom: 129px;
   left: 263.5px;
   height: 1213px;
 }
-.cv-child2,
-.cv-child3 {
+.cv-child1,
+.cv-child2 {
   right: 263.5px;
 }
-.cv-child2 {
+.cv-child1 {
   top: 918px;
   height: 645px;
 }
-.cv-child3 {
+.cv-child2 {
   bottom: 284px;
   height: 354px;
 }
@@ -166,6 +158,14 @@
   left: 69.33px;
   width: 650.3px;
   height: 30px;
+}
+.icon-akar-cross1 {
+  position: absolute;
+  top: 47px;
+  right: 39.9px;
+  width: 112.1px;
+  height: 112.1px;
+  cursor: pointer;
 }
 .cv {
   position: relative;

@@ -1,127 +1,112 @@
-.tokyo-glow-child {
+.the-trip-child {
   position: absolute;
-  top: 36.46px;
-  left: 21px;
-  width: 1878px;
-  height: 2635.5px;
+  top: 36.04px;
+  left: -80.21px;
+  width: 2080.4px;
+  height: 2573px;
 }
-.tokyo-glow-item {
-  top: 665px;
-  right: 135px;
-  width: 960px;
-  height: 980px;
-}
-.rectangle-div,
-.tokyo-glow-inner,
-.tokyo-glow-item {
+.screenshot-2024-11-05-130308 {
   position: absolute;
+  top: 94px;
+  left: 66px;
   border-radius: var(--br-31xl);
-  background-color: var(--color-lightgray);
-}
-.tokyo-glow-inner {
-  bottom: 363px;
-  left: 189px;
-  width: 604px;
-  height: 1413px;
-}
-.rectangle-div {
-  right: 258px;
-  bottom: 188px;
-  width: 914px;
-  height: 820px;
-}
-.icon {
-  position: absolute;
-  top: 66px;
-  left: 42px;
-  border-radius: 76px;
-  width: 743px;
-  height: 809px;
+  width: 920px;
+  height: 521px;
   object-fit: cover;
 }
-.p {
-  white-space: pre-wrap;
-}
-.p,
-.public-ghost-ghost {
-  margin: 0;
-}
-.public-ghost-ghost-container {
+.the-trip1 {
   position: absolute;
-  top: 813px;
-  right: 72px;
-  display: inline-block;
-  width: 991px;
-  height: 823px;
-}
-.index1-ghosttimestampcount-container,
-.public-ghost-ghost-container1 {
-  position: absolute;
-  bottom: 363px;
-  left: 170px;
-  display: inline-block;
-  width: 573px;
-  height: 1116px;
-}
-.index1-ghosttimestampcount-container {
-  bottom: 148px;
-  left: 814px;
-  width: 810px;
-  height: 827px;
-}
-.recorded-info-about,
-.script-for-how,
-.tokyo-glow-neon-night-container {
-  position: absolute;
-  font-family: var(--font-castellar);
-  text-align: center;
-  display: inline-block;
-}
-.tokyo-glow-neon-night-container {
-  top: 321.5px;
-  right: 235.5px;
+  top: 390.82px;
+  right: 128.89px;
   font-size: var(--font-size-81xl);
   color: var(--color-darkseagreen);
+  display: inline-block;
   width: 931px;
-  transform: rotate(12deg);
+  transform: rotate(1deg);
 }
-.recorded-info-about,
-.script-for-how {
+.the-trip-inner,
+.the-trip-item {
+  position: absolute;
+  left: 66px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-lightgray);
+  width: 1781px;
+}
+.the-trip-item {
+  top: 682px;
+  height: 1118px;
+}
+.the-trip-inner {
+  bottom: 211px;
+  height: 558px;
+}
+.script-for-shooting,
+.script-for-shooting1 {
+  position: absolute;
+  top: 746px;
+  left: 255px;
   font-size: var(--font-size-31xl);
+  display: inline-block;
+  width: 1487px;
 }
-.recorded-info-about {
-  top: 954px;
-  left: 202px;
-  color: var(--color-gray);
-  width: 554px;
+.script-for-shooting1 {
+  top: 1892px;
 }
-.script-for-how {
-  top: 716.53px;
-  right: 250px;
-  width: 710px;
+.blank-line {
+  margin: 0;
 }
-.path-16-icon {
+.serializefield-private-gameob {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.serializefield-private-gameob-container {
+  top: 832px;
+  left: 130px;
+  width: 991px;
+  height: 919px;
+}
+.instantiateasteroids1-new-ve-container,
+.serializefield-private-gameob-container,
+.serializefield-private-transf-container {
   position: absolute;
-  bottom: 218.22px;
-  left: 788.07px;
+  font-family: var(--font-courier-new);
+  text-align: left;
+  display: inline-block;
+}
+.serializefield-private-transf-container {
+  bottom: 188px;
+  left: 228px;
+  width: 1465px;
+  height: 430px;
+}
+.instantiateasteroids1-new-ve-container {
+  top: 832px;
+  right: 12px;
+  width: 991px;
+  height: 968px;
+}
+.path-18-icon {
+  position: absolute;
+  top: 817.39px;
+  left: 887.07px;
   width: 10px;
-  height: 719.6px;
+  height: 923.5px;
 }
-.icon-core-x {
+.icon-akar-cross {
   position: absolute;
-  top: 66px;
-  right: 128.9px;
-  width: 127.1px;
-  height: 127.1px;
+  top: 43px;
+  right: 35.9px;
+  width: 112.1px;
+  height: 112.1px;
   cursor: pointer;
 }
-.tokyo-glow {
+.the-trip {
   position: relative;
   background-color: var(--color-gainsboro);
   width: 100%;
-  height: 2672px;
-  text-align: left;
+  height: 2609px;
+  text-align: center;
   font-size: var(--font-size-5xl);
   color: var(--color-darkslategray);
-  font-family: var(--font-courier-new);
+  font-family: var(--font-castellar);
 }

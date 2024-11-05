@@ -12,7 +12,7 @@
   width: 269.8px;
   height: 340.2px;
 }
-.liam-rosloot1 {
+.liam-rosloot2 {
   position: absolute;
   top: 212px;
   right: 256px;
@@ -120,7 +120,7 @@
   width: 1268.1px;
   height: 30px;
 }
-.blank-line21 {
+.blank-line31 {
   margin: 0;
   font-size: var(--font-size-4xl);
 }
@@ -173,12 +173,12 @@
 }
 .click-here-for1 {
   position: absolute;
-  top: 2437px;
-  left: 314px;
-}
-.click-here-for2 {
   bottom: 172.25px;
   left: 918px;
+}
+.click-here-for2 {
+  top: 2439px;
+  left: 328px;
 }
 .click-here-for2,
 .div,
@@ -212,7 +212,7 @@
   height: 30px;
 }
 .home-child4,
-.screenshot-2024-11-05-130308 {
+.screenshot-2024-11-05-1303081 {
   position: absolute;
   bottom: 254.25px;
   border-radius: var(--br-31xl);
@@ -224,7 +224,7 @@
   width: 824px;
   height: 494px;
 }
-.screenshot-2024-11-05-130308 {
+.screenshot-2024-11-05-1303081 {
   right: 78px;
   width: 795px;
   height: 451px;
