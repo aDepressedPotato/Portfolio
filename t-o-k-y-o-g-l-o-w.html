@@ -31,138 +31,29 @@
 
       <div class="tokyo-glow-item"></div>
       <div class="tokyo-glow-inner"></div>
-      <div class="tokyo-glow-child1"></div>
+      <div class="rectangle-div"></div>
       <img class="icon" alt="" src="./public/11@2x.png" />
 
-      <div class="public-ghost-ghost-container">
-        <p class="private-float-timer">[</p>
-        <p class="public-ghost-ghost">public Ghost Ghost;</p>
-        <p class="private-float-timer">private float timer;</p>
-        <p class="private-float-timer">private float timeValue;</p>
-        <p class="private-float-timer">private void Awake()</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">if (Ghost.IsRecord)</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">Ghost.ResetData();</p>
-        <p class="private-float-timer">timeValue = 0;</p>
-        <p class="private-float-timer">timer = 0;</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">}]</p>
-        <p class="public-ghost-ghost">&nbsp;</p>
-        <p class="private-float-timer">void Update()</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">timer += Time.unscaledDeltaTime;</p>
-        <p class="private-float-timer">timeValue += Time.unscaledDeltaTime;</p>
-        <p class="public-ghost-ghost">&nbsp;</p>
-        <p class="private-float-timer">
-          if(Ghost.IsRecord& timer &gt;= 1 / Ghost.RecordFrequancy)
-        </p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">Ghost.TimeStamp.Add(timeValue);</p>
-        <p class="private-float-timer">
-          Ghost.Position.Add(this.transform.position);
-        </p>
-        <p class="private-float-timer">
-          Ghost.Rotation.Add(this.transform.eulerAngles);
-        </p>
-        <p class="public-ghost-ghost">&nbsp;</p>
-        <p class="private-float-timer">timer = 0;</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">}]</p>
-      </div>
-      <div class="public-ghost-ghost-container1">
-        <p class="public-ghost-ghost">[</p>
-        <p class="private-float-timer">public Ghost Ghost;</p>
-        <p class="private-float-timer">private float timeValue;</p>
-        <p class="private-float-timer">private int index1;</p>
-        <p class="private-float-timer">private int index2;</p>
-        <p class="public-ghost-ghost">&nbsp;</p>
-        <p class="private-float-timer">private void Awake()</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">timeValue = 0;</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">void Update()</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">timeValue += Time.unscaledDeltaTime;</p>
-        <p class="public-ghost-ghost">&nbsp;</p>
-        <p class="private-float-timer">if (Ghost.IsReplay)</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">GetIndex();</p>
-        <p class="private-float-timer">SetTransform();</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">private void GetIndex()</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">
-          for(int i=0; i&lt; Ghost.TimeStamp.Count-2; i++)
-        </p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">if(Ghost.TimeStamp[i]== timeValue)</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">index1 = i;</p>
-        <p class="private-float-timer">index2 = i;</p>
-        <p class="private-float-timer">return;</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">
-          else if(Ghost.TimeStamp[i]&lt; timeValue& timeValue &lt;
-          Ghost.TimeStamp[i + 1])
-        </p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">index1 = i;</p>
-        <p class="private-float-timer">index2 = i + 1;</p>
-        <p class="private-float-timer">return;</p>
-        <p class="public-ghost-ghost"></p>
-      </div>
-      <div class="index1-ghosttimestampcount-container">
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">index1 = Ghost.TimeStamp.Count - 1;</p>
-        <p class="private-float-timer">index2 = Ghost.TimeStamp.Count - 1;</p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">private void SetTransform()</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">if(index1== index2)</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">
-          this.transform.position = Ghost.Position[index1];
-        </p>
-        <p class="private-float-timer">
-          this.transform.eulerAngles = Ghost.Position[index1];
-        </p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">else</p>
-        <p class="private-float-timer">{</p>
-        <p class="private-float-timer">
-          float interpolationFactor = (timeValue - Ghost.TimeStamp[index1]) /
-          (Ghost.TimeStamp[index2] - Ghost.TimeStamp[index1]);
-        </p>
-        <p class="public-ghost-ghost">&nbsp;</p>
-        <p class="private-float-timer">
-          this.transform.position = Vector3.Lerp(Ghost.Position[index1],
-          Ghost.Position[index2], interpolationFactor);
-        </p>
-        <p class="private-float-timer">
-          this.transform.eulerAngles = Vector3.Lerp(Ghost.Rotation[index1],
-          Ghost.Rotation[index2], interpolationFactor);
-        </p>
-        <p class="private-float-timer">}</p>
-        <p class="private-float-timer">}]</p>
-      </div>
       <div class="tokyo-glow-neon-night-container">
-        <p class="public-ghost-ghost">Tokyo Glow</p>
-        <p class="public-ghost-ghost">Neon Night</p>
+        <p class="neon-night">Tokyo Glow</p>
+        <p class="neon-night">Neon Night</p>
       </div>
-      <div class="recorded-info-about">Recorded info about the car below</div>
-      <div class="script-for-how">Script for how the car drives</div>
       <img class="path-16-icon" alt="" src="./public/path-16.svg" />
 
       <img
-        class="icon-akar-cross2"
+        class="icon-akar-cross1"
         alt=""
         src="./public/icon-akarcross.svg"
         id="iconAkarCross"
       />
+
+      <img class="image-1-icon" alt="" src="./public/image-1@2x.png" />
+
+      <img class="image-2-icon" alt="" src="./public/image-2@2x.png" />
+
+      <img class="image-3-icon" alt="" src="./public/image-3@2x.png" />
+
+      <img class="image-4-icon" alt="" src="./public/image-4@2x.png" />
     </div>
 
     <script>

@@ -38,9 +38,9 @@
 }
 .cv-child1,
 .cv-child2,
+.cv-child3,
 .cv-inner,
-.cv-item,
-.rectangle-div {
+.cv-item {
   position: absolute;
   border-radius: var(--br-31xl);
   background-color: var(--color-lightgray);
@@ -53,27 +53,27 @@
 }
 .cv-child1,
 .cv-child2,
-.rectangle-div {
+.cv-child3 {
   width: 650px;
 }
-.rectangle-div {
+.cv-child1 {
   bottom: 129px;
   left: 263.5px;
   height: 1213px;
 }
-.cv-child1,
-.cv-child2 {
+.cv-child2,
+.cv-child3 {
   right: 263.5px;
 }
-.cv-child1 {
+.cv-child2 {
   top: 918px;
   height: 645px;
 }
-.cv-child2 {
+.cv-child3 {
   bottom: 284px;
   height: 354px;
 }
-.studentglunl {
+.p {
   margin: 0;
 }
 .im-a-spontanious,
@@ -159,7 +159,7 @@
   width: 650.3px;
   height: 30px;
 }
-.icon-akar-cross1 {
+.icon-akar-cross2 {
   position: absolute;
   top: 47px;
   right: 39.9px;

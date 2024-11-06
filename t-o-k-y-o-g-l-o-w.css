@@ -11,7 +11,7 @@
   width: 960px;
   height: 980px;
 }
-.tokyo-glow-child1,
+.rectangle-div,
 .tokyo-glow-inner,
 .tokyo-glow-item {
   position: absolute;
@@ -24,7 +24,7 @@
   width: 604px;
   height: 1413px;
 }
-.tokyo-glow-child1 {
+.rectangle-div {
   right: 258px;
   bottom: 188px;
   width: 914px;
@@ -39,66 +39,16 @@
   height: 809px;
   object-fit: cover;
 }
-.public-ghost-ghost {
+.neon-night {
   margin: 0;
 }
-.private-float-timer {
-  margin: 0;
-  white-space: pre-wrap;
-}
-.public-ghost-ghost-container {
-  position: absolute;
-  top: 813px;
-  right: 72px;
-  display: inline-block;
-  width: 991px;
-  height: 823px;
-}
-.index1-ghosttimestampcount-container,
-.public-ghost-ghost-container1 {
-  position: absolute;
-  bottom: 363px;
-  left: 170px;
-  display: inline-block;
-  width: 573px;
-  height: 1116px;
-}
-.index1-ghosttimestampcount-container {
-  bottom: 148px;
-  left: 814px;
-  width: 810px;
-  height: 827px;
-}
-.recorded-info-about,
-.script-for-how,
 .tokyo-glow-neon-night-container {
   position: absolute;
-  font-family: var(--font-castellar);
-  text-align: center;
-  display: inline-block;
-}
-.tokyo-glow-neon-night-container {
   top: 321.5px;
   right: 235.5px;
-  font-size: var(--font-size-81xl);
-  color: var(--color-darkseagreen);
+  display: inline-block;
   width: 931px;
   transform: rotate(12deg);
-}
-.recorded-info-about,
-.script-for-how {
-  font-size: var(--font-size-31xl);
-}
-.recorded-info-about {
-  top: 954px;
-  left: 202px;
-  color: var(--color-gray);
-  width: 554px;
-}
-.script-for-how {
-  top: 716.53px;
-  right: 250px;
-  width: 710px;
 }
 .path-16-icon {
   position: absolute;
@@ -107,7 +57,7 @@
   width: 10px;
   height: 719.6px;
 }
-.icon-akar-cross2 {
+.icon-akar-cross1 {
   position: absolute;
   top: 43px;
   right: 39.9px;
@@ -115,13 +65,45 @@
   height: 112.1px;
   cursor: pointer;
 }
+.image-1-icon {
+  position: absolute;
+  top: 713px;
+  right: 202px;
+  width: 850px;
+  height: 884px;
+  object-fit: cover;
+}
+.image-2-icon {
+  top: 1341px;
+  left: 201px;
+  width: 572px;
+  height: 861px;
+}
+.image-2-icon,
+.image-3-icon,
+.image-4-icon {
+  position: absolute;
+  object-fit: cover;
+}
+.image-3-icon {
+  top: 927px;
+  left: 191px;
+  width: 582px;
+  height: 414px;
+}
+.image-4-icon {
+  bottom: 229px;
+  left: 825px;
+  width: 775px;
+  height: 737px;
+}
 .tokyo-glow {
   position: relative;
   background-color: var(--color-gainsboro);
   width: 100%;
   height: 2672px;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-darkslategray);
-  font-family: var(--font-courier-new);
+  text-align: center;
+  font-size: var(--font-size-81xl);
+  color: var(--color-darkseagreen);
+  font-family: var(--font-castellar);
 }
